@@ -301,20 +301,76 @@ nav a:hover, nav a:focus-visible{color:var(--ink); background:rgba(255,255,255,0
 .tool-card span{font-size:0.82rem;color:var(--ink-dim);}
 
 /* ============ ABOUT ============ */
-.about-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:56px;align-items:center;}
-@media (max-width:900px){.about-grid{grid-template-columns:1fr;}}
+.about-grid{
+    display:grid;
+    grid-template-columns:0.8fr 1.2fr;
+    gap:56px;
+    align-items:center;
+}
+
+@media (max-width:900px){
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+}
+
 .about-photo{
-  aspect-ratio:4/5;border-radius:22px;overflow:hidden;position:relative;
+    width:380px;
+    height:480px;
+    margin:auto;
+    border-radius:22px;
+    overflow:hidden;
+    border:3px solid #d4a657;
+    box-shadow:0 15px 40px rgba(212,166,87,.35);
+    transition:.5s;
 }
-.about-photo svg{width:100%;height:100%;}
-.about-photo::after{
-  content:"";position:absolute;inset:0;border-radius:22px;border:1px solid var(--glass-border);
+
+.about-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
 }
-.about-stats{display:flex;gap:0;margin-top:30px;}
-.about-stats div{flex:1;border-left:1px solid var(--line);padding-left:16px;}
-.about-stats b{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;display:block;color:var(--gold-soft);}
-.about-stats span{font-size:0.78rem;color:var(--ink-faint);}
-.about-text p{color:var(--ink-dim);margin-bottom:16px;font-size:1.02rem;}
+
+.about-photo:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 60px rgba(212,166,87,.6);
+}
+
+.about-photo:hover img{
+    transform:scale(1.05);
+}
+
+.about-stats{
+    display:flex;
+    gap:0;
+    margin-top:30px;
+}
+
+.about-stats div{
+    flex:1;
+    border-left:1px solid var(--line);
+    padding-left:16px;
+}
+
+.about-stats b{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:1.6rem;
+    display:block;
+    color:var(--gold-soft);
+}
+
+.about-stats span{
+    font-size:0.78rem;
+    color:var(--ink-faint);
+}
+
+.about-text p{
+    color:var(--ink-dim);
+    margin-bottom:16px;
+    font-size:1.02rem;
+}
 
 /* ============ TIMELINE ============ */
 .timeline{position:relative;padding-left:36px;}
