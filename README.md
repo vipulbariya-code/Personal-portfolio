@@ -82,8 +82,7 @@ Personal-portfolio
 # 📸 Preview
 
 ## Homepage
-
-> Upload your homepage screenshot inside the `images` folder.
+<img src="img1.2.png" width="100%" alt="Portfolio Homepage">
 
 ```text
 images/homepage.png
@@ -92,7 +91,7 @@ images/homepage.png
 Then use:
 
 ```html
-<img src="images/homepage.png" width="100%" alt="Portfolio Homepage">
+
 ```
 
 ---
