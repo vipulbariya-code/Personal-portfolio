@@ -85,7 +85,6 @@ Personal-portfolio
 <img src="img1.2.png" width="100%" alt="Portfolio Homepage">
 
 ```text
-images/homepage.png
 ```
 
 Then use:
