@@ -84,13 +84,6 @@ Personal-portfolio
 ## Homepage
 <img src="img1.2.png" width="100%" alt="Portfolio Homepage">
 
-```text
-```
-
-Then use:
-
-```html
-
 ```
 
 ---
