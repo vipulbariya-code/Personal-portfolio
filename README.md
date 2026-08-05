@@ -1,142 +1,65 @@
-<div align="center">
+# Personal Portfolio
 
-# 🌐 Personal Portfolio Website
+[![Live site](https://img.shields.io/badge/Live%20site-GitHub%20Pages-2ea44f?style=for-the-badge&logo=github)](https://vipulbariya-code.github.io/Personal-portfolio/)
+[![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
 
-### 🚀 Modern | Responsive | Professional Portfolio
+A responsive personal portfolio for Vipul Bariya, a full-stack web developer and cybersecurity learner. It highlights skills, services, projects, experience, and ways to get in touch.
 
-<p>
-Showcasing my projects, skills, experience, and journey as a Full Stack Web Developer & Cybersecurity Learner.
-</p>
+## Live site
 
-<p>
+Visit the portfolio: **[vipulbariya-code.github.io/Personal-portfolio](https://vipulbariya-code.github.io/Personal-portfolio/)**
 
-<a href="https://vipulbariya.netlify.app/">
-<img src="https://img.shields.io/badge/🌐_Live_Website-Visit_Now-00C853?style=for-the-badge" />
-</a>
+## Preview
 
-<img src="https://img.shields.io/github/stars/vipulbariya-code/Personal-portfolio?style=for-the-badge"/>
+![Portfolio homepage preview](img1.2.png)
 
-<img src="https://img.shields.io/github/forks/vipulbariya-code/Personal-portfolio?style=for-the-badge"/>
+## Features
 
-<img src="https://img.shields.io/github/license/vipulbariya-code/Personal-portfolio?style=for-the-badge"/>
+- Responsive, dark-themed design for desktop and mobile devices
+- Project filtering and animated skill bars
+- Accessible navigation, focus styles, and reduced-motion support
+- Mobile menu and smooth scrolling
+- Contact form validation with an email-client fallback
+- GitHub Pages deployment workflow
 
-</p>
+## Built with
 
-</div>
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- GitHub Pages
 
----
+## Run locally
 
-# 📖 About
+Clone the repository and open `index.html` in a browser. No build step or dependencies are required.
 
-This is my personal portfolio website where I showcase my projects, technical skills, certifications, and professional journey.
+```bash
+git clone https://github.com/vipulbariya-code/Personal-portfolio.git
+cd Personal-portfolio
+```
 
-The portfolio is designed with a modern, responsive, and user-friendly interface to provide visitors with a smooth browsing experience across all devices.
+For the best local experience, serve the folder with a static-server extension or your preferred local development server.
 
----
-
-# ✨ Features
-
-- 🎨 Modern UI/UX
-- 📱 Fully Responsive Design
-- 🌙 Dark Theme
-- ⚡ Fast Loading
-- 💻 Projects Showcase
-- 🧑‍💻 About Me Section
-- 🛠️ Skills & Technologies
-- 📜 Resume Download
-- 📬 Contact Form
-- 🔗 Social Media Links
-- 🚀 SEO Friendly
-
----
-
-# 🛠 Tech Stack
-
-| Frontend | Tools |
-|-----------|--------|
-| HTML5 | Git |
-| CSS3 | GitHub |
-| JavaScript | VS Code |
-| Responsive Design | Netlify |
-
----
-
-# 📂 Project Structure
+## Project structure
 
 ```text
-Personal-portfolio
-│
-├── assets/
-├── css/
-├── js/
-├── images/
-├── index.html
-├── about.html
-├── contact.html
-├── projects.html
+Personal-portfolio/
+├── .github/workflows/deploy-pages.yml  # GitHub Pages deployment
+├── index.html                          # Portfolio site
+├── imag1.jpeg                          # Profile image
+├── img1.2.png                          # Homepage preview
+├── logo.png                            # Site logo
 └── README.md
 ```
 
----
+## Connect
 
-# 📸 Preview
+- GitHub: [@vipulbariya-code](https://github.com/vipulbariya-code)
+- LinkedIn: [Vipul Bariya](https://www.linkedin.com/in/vipul-bariya-23a46426b/)
+- Email: [vipulvbariya31@gmail.com](mailto:vipulvbariya31@gmail.com)
 
-## Homepage
-<img src="img1.2.png" width="100%" alt="Portfolio Homepage">
+## License
 
-
-# 🚀 Live Demo
-
-🌐 **Website**
-
-https://vipulbariya.netlify.app/
-
----
-
-# 👨‍💻 About Me
-
-Hi, I'm **Vipul Bariya**, a passionate **Full Stack Web Developer**, **Cybersecurity Learner**, and **AI Enthusiast**.
-
-I enjoy building modern, responsive, and user-friendly web applications while continuously learning new technologies.
-
----
-
-# 🌐 Connect With Me
-
-<p align="left">
-
-<a href="https://github.com/vipulbariya-code">
-<img src="https://skillicons.dev/icons?i=github" height="45"/>
-</a>
-
-<a href="https://www.linkedin.com/in/vipulbariya/">
-<img src="https://skillicons.dev/icons?i=linkedin" height="45"/>
-</a>
-
-<a href="https://www.instagram.com/vipul._x07">
-<img src="https://skillicons.dev/icons?i=instagram" height="45"/>
-</a>
-
-<a href="https://vipulbariya.netlify.app/">
-<img src="https://img.shields.io/badge/Portfolio-Visit-success?style=for-the-badge"/>
-</a>
-
-</p>
-
----
-
-# ⭐ Support
-
-If you like this project, please consider giving it a ⭐ on GitHub.
-
-It motivates me to create more useful and high-quality projects.
-
----
-
-<div align="center">
-
-## ❤️ Thanks for Visiting
-
-Made with ❤️ by **Vipul Bariya**
-
-</div>
+This project is available for personal reference. Please contact the author before reusing portfolio content or assets.
