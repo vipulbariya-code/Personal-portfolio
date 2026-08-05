@@ -701,15 +701,14 @@ footer{border-top:1px solid var(--line);padding:56px 0 30px;}
 
     <div class="filters reveal" role="tablist" aria-label="Filter projects by category">
       <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-      <button class="filter-btn" data-filter="react" role="tab" aria-selected="false">React</button>
-      <button class="filter-btn" data-filter="wordpress" role="tab" aria-selected="false">WordPress</button>
-      <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack</button>
-      <button class="filter-btn" data-filter="landing" role="tab" aria-selected="false">Landing Pages</button>
+      <button class="filter-btn" data-filter="security" role="tab" aria-selected="false">Security</button>
+      <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI</button>
+      <button class="filter-btn" data-filter="portfolio" role="tab" aria-selected="false">Portfolio</button>
     </div>
 
     <div class="project-grid" id="projectGrid">
 
-      <article class="pcard glass reveal" data-cat="fullstack">
+      <article class="pcard glass reveal" data-cat="security">
         <div class="pcard-thumb">
           <svg viewBox="0 0 400 250" role="img" aria-label="Screenshot mockup of Nexora, a SaaS analytics dashboard with charts and a dark sidebar">
             <rect width="400" height="250" fill="#12151f"/>
@@ -726,18 +725,18 @@ footer{border-top:1px solid var(--line);padding:56px 0 30px;}
           </svg>
         </div>
         <div class="pcard-overlay">
-          <a href="#" aria-label="View live demo of Nexora dashboard">↗</a>
-          <a href="#" aria-label="View GitHub repository for Nexora dashboard">{ }</a>
+          <a href="https://cyberport-scanner.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of CyberPort Scanner">↗</a>
+          <a href="https://github.com/vipulbariya-code/CyberPort-Scanner" target="_blank" rel="noopener noreferrer" aria-label="View GitHub repository for CyberPort Scanner">{ }</a>
         </div>
         <div class="pcard-body">
-          <span class="pcard-cat">Full-Stack SaaS</span>
-          <h3>Nexora Analytics</h3>
-          <p>A real-time analytics dashboard with role-based access, live charting, and a Node.js/MongoDB backend.</p>
-          <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+          <span class="pcard-cat">Cybersecurity</span>
+          <h3>CyberPort Scanner</h3>
+          <p>A cyberpunk-themed TCP port scanner for educational and authorized network security testing.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">SQLite</span></div>
         </div>
       </article>
 
-      <article class="pcard glass reveal" data-cat="wordpress">
+      <article class="pcard glass reveal" data-cat="ai">
         <div class="pcard-thumb">
           <svg viewBox="0 0 400 250" role="img" aria-label="Screenshot mockup of Marbella Studio, a WordPress portfolio site for a design agency">
             <rect width="400" height="250" fill="#0f1219"/>
@@ -751,18 +750,18 @@ footer{border-top:1px solid var(--line);padding:56px 0 30px;}
           </svg>
         </div>
         <div class="pcard-overlay">
-          <a href="#" aria-label="View live demo of Marbella Studio">↗</a>
-          <a href="#" aria-label="View GitHub repository for Marbella Studio">{ }</a>
+          <a href="https://pickmyai.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Pick My AI">↗</a>
+          <a href="https://github.com/vipulbariya-code/Pick-My-AI" target="_blank" rel="noopener noreferrer" aria-label="View GitHub repository for Pick My AI">{ }</a>
         </div>
         <div class="pcard-body">
-          <span class="pcard-cat">WordPress</span>
-          <h3>Marbella Studio</h3>
-          <p>A fully custom WordPress theme for a design agency, built with ACF, custom blocks, and sub-second load times.</p>
-          <div class="tags"><span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">ACF</span></div>
+          <span class="pcard-cat">AI Discovery</span>
+          <h3>Pick My AI</h3>
+          <p>A platform for discovering and comparing AI tools for developers, designers, students, and creators.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
         </div>
       </article>
 
-      <article class="pcard glass reveal" data-cat="react">
+      <article class="pcard glass reveal" data-cat="portfolio">
         <div class="pcard-thumb">
           <svg viewBox="0 0 400 250" role="img" aria-label="Screenshot mockup of Alto Store, a React e-commerce product grid">
             <rect width="400" height="250" fill="#12151f"/>
@@ -776,18 +775,18 @@ footer{border-top:1px solid var(--line);padding:56px 0 30px;}
           </svg>
         </div>
         <div class="pcard-overlay">
-          <a href="#" aria-label="View live demo of Alto Store">↗</a>
-          <a href="#" aria-label="View GitHub repository for Alto Store">{ }</a>
+          <a href="https://vipulbariya-code.github.io/Personal-portfolio/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Personal Portfolio">↗</a>
+          <a href="https://github.com/vipulbariya-code/Personal-portfolio" target="_blank" rel="noopener noreferrer" aria-label="View GitHub repository for Personal Portfolio">{ }</a>
         </div>
         <div class="pcard-body">
-          <span class="pcard-cat">React E-Commerce</span>
-          <h3>Alto Store</h3>
-          <p>A headless e-commerce storefront with a Tailwind design system, cart persistence, and Stripe checkout.</p>
-          <div class="tags"><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">Stripe</span></div>
+          <span class="pcard-cat">Personal Portfolio</span>
+          <h3>Personal Portfolio</h3>
+          <p>A responsive portfolio website showcasing projects, technical skills, experience, and services.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
         </div>
       </article>
 
-      <article class="pcard glass reveal" data-cat="landing">
+      <article class="pcard glass reveal legacy hidden" data-cat="landing" aria-hidden="true">
         <div class="pcard-thumb">
           <svg viewBox="0 0 400 250" role="img" aria-label="Screenshot mockup of Lumen, a startup landing page with hero and gradient accents">
             <rect width="400" height="250" fill="#0d0f16"/>
@@ -812,7 +811,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 30px;}
         </div>
       </article>
 
-      <article class="pcard glass reveal" data-cat="fullstack">
+      <article class="pcard glass reveal legacy hidden" data-cat="fullstack" aria-hidden="true">
         <div class="pcard-thumb">
           <svg viewBox="0 0 400 250" role="img" aria-label="Screenshot mockup of Hostly, a booking platform with calendar and property cards">
             <rect width="400" height="250" fill="#12151f"/>
@@ -835,7 +834,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 30px;}
         </div>
       </article>
 
-      <article class="pcard glass reveal" data-cat="wordpress">
+      <article class="pcard glass reveal legacy hidden" data-cat="wordpress" aria-hidden="true">
         <div class="pcard-thumb">
           <svg viewBox="0 0 400 250" role="img" aria-label="Screenshot mockup of Verve Blog, a WordPress editorial magazine layout">
             <rect width="400" height="250" fill="#0f1219"/>
@@ -1222,6 +1221,7 @@ if (filterBtns.length && projectCards.length) {
             const filter = btn.getAttribute('data-filter');
 
             projectCards.forEach(card => {
+                if (card.classList.contains('legacy')) return;
                 const cat = card.getAttribute('data-cat');
                 const show = filter === 'all' || cat === filter;
                 card.classList.toggle('hidden', !show);
