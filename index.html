@@ -292,6 +292,33 @@ nav a:hover, nav a:focus-visible{color:var(--ink); background:rgba(255,255,255,0
   .nav-cta .btn{display:none;}
   .theme-toggle{width:40px;padding:0;border-radius:50%;}
   .theme-toggle-label{display:none;}
+
+  /* Mobile improvements: Better Spacing & Larger Buttons */
+  section {
+    padding: 70px 0;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .project-grid {
+    gap: 20px;
+  }
+  .btn {
+    padding: 15px 28px;
+    font-size: 1rem;
+  }
+  .hamburger {
+    width: 44px;
+    height: 44px;
+  }
+  .hero-actions {
+    gap: 12px;
+    justify-content: center;
+  }
 }
 #mobile-menu{
   position:fixed;inset:0;background:var(--bg);z-index:899;
@@ -1128,7 +1155,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 30px;}
         <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
       <div class="reveal">
-        <div class="glass contact-info-card">
+        <div class="glass contact-info-card" role="complementary" aria-label="Contact Information">
           <div class="contact-line"><div class="ic">@</div><a href="mailto:vipulvbariya31@gmail.com"><b>Email</b><span>vipulvbariya31@gmail.com</span></a></div>
           <div class="contact-line"><div class="ic">☎</div><div><b>Phone</b><span>+91 8849402382</span></div></div>
           <div class="contact-line"><div class="ic">in</div><a href="https://www.linkedin.com/in/vipul-bariya-23a46426b/" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b><span>linkedin.com/in/vipul-bariya-23a46426b</span></a></div>
@@ -1175,8 +1202,8 @@ footer{border-top:1px solid var(--line);padding:56px 0 30px;}
         <a href="#services">Services</a>
       </div>
       <div class="footer-col">
-        <h4>Get in Touch</h4>
-        <a href="#contact">Contact</a>
+        <h4>Connect</h4>
+        <a href="#contact">Hire Me</a>
         <a href="mailto:vipulvbariya31@gmail.com">Email</a>
         <a href="#timeline">Journey</a>
       </div>
@@ -1232,7 +1259,7 @@ if (themeToggle) {
     }
 
     function startLoaderTimer() {
-        setTimeout(hideLoader, 2000); /* show loader for 2 seconds */
+        setTimeout(hideLoader, 300); /* show loader for 0.3 seconds */
     }
 
     if (loader) {
@@ -1437,6 +1464,7 @@ if (form && status) {
         const mailto = `mailto:vipulvbariya31@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
         status.textContent = "Opening your email app to send the message.";
+        // Note: Using mailto: is a client-side solution. For more robust contact forms, a server-side script is recommended.
         window.location.href = mailto;
         form.reset();
 
