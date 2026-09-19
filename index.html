@@ -188,109 +188,187 @@
 <section id="work">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow">// my work</div>
-      <h2>Featured Projects</h2>
-      <p>A selection of case studies spanning e-commerce, SaaS dashboards, and content-driven WordPress builds — every pixel intentional, every interaction tested.</p>
+      <div class="eyebrow">// selected works</div>
+      <h2>Featured Projects.</h2>
+      <p>A showcase of my recent projects across cybersecurity, AI, and modern web development — focused on practical solutions, clean interfaces, and real-world functionality.</p>
     </div>
 
     <div class="filters reveal" role="tablist" aria-label="Filter projects by category">
       <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
       <button class="filter-btn" data-filter="security" role="tab" aria-selected="false">Security</button>
       <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI</button>
-      <button class="filter-btn" data-filter="portfolio" role="tab" aria-selected="false">Portfolio</button>
+      <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Development</button>
     </div>
 
     <div class="project-grid" id="projectGrid">
 
-        <article class="project-card-enhanced" data-cat="security">
-            <div class="project-image-container">
-                <div class="image-loader"></div>
-                <img src="logo.png" alt="CyberPort Scanner - Desktop View" class="project-image desktop-shot" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20width%3D%22400%22%20height%3D%22250%22%20viewBox%3D%220%200%20400%20250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22400%22%20height%3D%22250%22%20fill%3D%22%23171b27%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2220%22%20fill%3D%22%236d7383%22%3EImage%20not%20found%3C%2Ftext%3E%3C%2Fsvg%3E';">
-                <img src="img1.2.png" alt="CyberPort Scanner - Mobile View" class="project-image mobile-shot" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20width%3D%22120%22%20height%3D%22240%22%20viewBox%3D%220%200%20120%20240%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22120%22%20height%3D%22240%22%20fill%3D%22%23171b27%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%236d7383%22%3EError%3C%2Ftext%3E%3C%2Fsvg%3E';">
+        <!-- Project 1: CyberPort Scanner -->
+        <article class="project-card-enhanced project-showcase-card" data-cat="security">
+            <div class="project-visual-col">
+                <div class="mockup-window">
+                    <div class="mockup-bar">
+                        <div class="mockup-dots" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-url mono">cyberport-scanner.onrender.com</div>
+                    </div>
+                    <div class="project-image-container">
+                        <div class="image-loader"></div>
+                        <img src="CyberPort_Scanner_Home_page.png" alt="CyberPort Scanner — Network Security Port Scanner Homepage Interface" class="project-image" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20width%3D%22600%22%20height%3D%22375%22%20viewBox%3D%220%200%20600%20375%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22600%22%20height%3D%22375%22%20fill%3D%22%2312151f%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2218%22%20fill%3D%22%235eead4%22%3ECyberPort%20Scanner%20Preview%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                    </div>
+                </div>
             </div>
-            <div class="project-content">
+            <div class="project-content-col">
+                <div class="project-meta-top">
+                    <span class="project-category-tag mono">Cybersecurity Network Scanning Tool</span>
+                </div>
                 <h3 class="project-title">CyberPort Scanner</h3>
-                <p class="project-description">A cyberpunk-themed TCP port scanner for educational and authorized network security testing.</p>
+                <p class="project-description">Designed and developed an educational TCP port scanning application for authorized network security testing. The project combines a cyberpunk-inspired interface with a Flask backend and SQLite database to provide a simple and interactive network scanning experience.</p>
                 
-                <h4>Key Features</h4>
-                <ul class="key-features">
-                    <li>Real-time port scanning</li>
-                    <li>Network service identification</li>
-                    <li>User-friendly web interface</li>
-                </ul>
+                <div class="project-features-block">
+                    <h4 class="features-heading mono">Key Features</h4>
+                    <ul class="key-features">
+                        <li>Real-time TCP port scanning</li>
+                        <li>Network service and port identification</li>
+                        <li>Cyberpunk-inspired modern interface</li>
+                        <li>Responsive design for desktop and mobile</li>
+                        <li>Flask-based backend with SQLite</li>
+                    </ul>
+                </div>
 
-                <h4>Technology Stack</h4>
-                <div class="tech-stack">
+                <div class="tech-stack" aria-label="Technologies used">
                     <span class="tech-badge">Python</span>
                     <span class="tech-badge">Flask</span>
                     <span class="tech-badge">SQLite</span>
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">JavaScript</span>
                 </div>
 
                 <div class="project-actions">
-                    <a href="https://cyberport-scanner.onrender.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Live Demo</a>
-                    <a href="https://github.com/vipulbariya-code/CyberPort-Scanner" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">View Source Code</a>
+                    <a href="https://cyberport-scanner.onrender.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <span>Explore Project</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                    <a href="https://github.com/vipulbariya-code/CyberPort-Scanner" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        <span>View Source Code</span>
+                    </a>
                 </div>
             </div>
         </article>
 
-        <article class="project-card-enhanced" data-cat="ai">
-            <div class="project-image-container">
-                <div class="image-loader"></div>
-                <img src="imag1.jpeg" alt="Pick My AI - Desktop View" class="project-image desktop-shot" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20width%3D%22400%22%20height%3D%22250%22%20viewBox%3D%220%200%20400%20250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22400%22%20height%3D%22250%22%20fill%3D%22%23171b27%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2220%22%20fill%3D%22%236d7383%22%3EImage%20not%20found%3C%2Ftext%3E%3C%2Fsvg%3E';">
-                <img src="img1.2.png" alt="Pick My AI - Mobile View" class="project-image mobile-shot" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20width%3D%22120%22%20height%3D%22240%22%20viewBox%3D%220%200%20120%20240%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22120%22%20height%3D%22240%22%20fill%3D%22%23171b27%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%236d7383%22%3EError%3C%2Ftext%3E%3C%2Fsvg%3E';">
+        <!-- Project 2: Pick My AI -->
+        <article class="project-card-enhanced project-showcase-card" data-cat="ai">
+            <div class="project-visual-col">
+                <div class="mockup-window">
+                    <div class="mockup-bar">
+                        <div class="mockup-dots" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-url mono">pickmyai.vercel.app</div>
+                    </div>
+                    <div class="project-image-container">
+                        <div class="image-loader"></div>
+                        <img src="pickmyai-preview.jpg" alt="Pick My AI — AI Tools Discovery & Comparison Platform Interface" class="project-image" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20width%3D%22600%22%20height%3D%22375%22%20viewBox%3D%220%200%20600%20375%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22600%22%20height%3D%22375%22%20fill%3D%22%2312151f%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2218%22%20fill%3D%22%235eead4%22%3EPick%20My%20AI%20Preview%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                    </div>
+                </div>
             </div>
-            <div class="project-content">
+            <div class="project-content-col">
+                <div class="project-meta-top">
+                    <span class="project-category-tag mono">AI Tools Discovery &amp; Comparison Platform</span>
+                </div>
                 <h3 class="project-title">Pick My AI</h3>
-                <p class="project-description">A platform for discovering and comparing AI tools for developers, designers, students, and creators.</p>
+                <p class="project-description">Designed and developed a full-stack AI tools discovery platform that helps developers, designers, students, and creators discover, compare, and find suitable AI tools based on their requirements.</p>
                 
-                <h4>Key Features</h4>
-                <ul class="key-features">
-                    <li>Curated list of AI tools</li>
-                    <li>Category-based filtering</li>
-                    <li>Community ratings and reviews</li>
-                </ul>
+                <div class="project-features-block">
+                    <h4 class="features-heading mono">Key Features</h4>
+                    <ul class="key-features">
+                        <li>AI-powered tool recommendations</li>
+                        <li>AI Tool Finder</li>
+                        <li>Trending AI tools</li>
+                        <li>Category-based search and filtering</li>
+                        <li>Tool comparison system</li>
+                        <li>User authentication and profiles</li>
+                        <li>Favorites and saved AI tools</li>
+                        <li>Gemini API integration</li>
+                    </ul>
+                </div>
 
-                <h4>Technology Stack</h4>
-                <div class="tech-stack">
+                <div class="tech-stack" aria-label="Technologies used">
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">JavaScript</span>
                     <span class="tech-badge">HTML</span>
                     <span class="tech-badge">CSS</span>
-                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Gemini API</span>
                 </div>
 
                 <div class="project-actions">
-                    <a href="https://pickmyai.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Live Demo</a>
-                    <a href="https://github.com/vipulbariya-code/Pick-My-AI" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">View Source Code</a>
+                    <a href="https://pickmyai.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <span>Explore Project</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                    <a href="https://github.com/vipulbariya-code/Pick-My-AI" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        <span>View Source Code</span>
+                    </a>
                 </div>
             </div>
         </article>
 
-        <article class="project-card-enhanced" data-cat="portfolio">
-            <div class="project-image-container">
-                <div class="image-loader"></div>
-                <img src="imag1.jpeg" alt="Personal Portfolio - Desktop View" class="project-image desktop-shot" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20width%3D%22400%22%20height%3D%22250%22%20viewBox%3D%220%200%20400%20250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22400%22%20height%3D%22250%22%20fill%3D%22%23171b27%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2220%22%20fill%3D%22%236d7383%22%3EImage%20not%20found%3C%2Ftext%3E%3C%2Fsvg%3E';">
-                <img src="img1.2.png" alt="Personal Portfolio - Mobile View" class="project-image mobile-shot" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20width%3D%22120%22%20height%3D%22240%22%20viewBox%3D%220%200%20120%20240%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22120%22%20height%3D%22240%22%20fill%3D%22%23171b27%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%236d7383%22%3EError%3C%2Ftext%3E%3C%2Fsvg%3E';">
+        <!-- Project 3: Personal Portfolio -->
+        <article class="project-card-enhanced project-showcase-card" data-cat="web">
+            <div class="project-visual-col">
+                <div class="mockup-window">
+                    <div class="mockup-bar">
+                        <div class="mockup-dots" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-url mono">vipulbariya-code.github.io</div>
+                    </div>
+                    <div class="project-image-container">
+                        <div class="image-loader"></div>
+                        <img src="Personal_protfolio_Home_page.png" alt="Personal Portfolio — Modern Developer Portfolio Interface" class="project-image" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg%20width%3D%22600%22%20height%3D%22375%22%20viewBox%3D%220%200%20600%20375%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22600%22%20height%3D%22375%22%20fill%3D%22%2312151f%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2218%22%20fill%3D%22%235eead4%22%3EPortfolio%20Preview%3C%2Ftext%3E%3C%2Fsvg%3E';">
+                    </div>
+                </div>
             </div>
-            <div class="project-content">
+            <div class="project-content-col">
+                <div class="project-meta-top">
+                    <span class="project-category-tag mono">Modern Developer Portfolio Website</span>
+                </div>
                 <h3 class="project-title">Personal Portfolio</h3>
-                <p class="project-description">A responsive portfolio website showcasing projects, technical skills, experience, and services.</p>
+                <p class="project-description">Designed and developed a responsive personal portfolio to showcase my projects, technical skills, experience, services, and professional journey through a modern and interactive interface.</p>
                 
-                <h4>Key Features</h4>
-                <ul class="key-features">
-                    <li>Interactive UI with animations</li>
-                    <li>Dynamic project filtering</li>
-                    <li>Dark/Light mode theme</li>
-                </ul>
+                <div class="project-features-block">
+                    <h4 class="features-heading mono">Key Features</h4>
+                    <ul class="key-features">
+                        <li>Responsive mobile-first design</li>
+                        <li>Interactive project showcase</li>
+                        <li>Dynamic project filtering</li>
+                        <li>Dark and light theme</li>
+                        <li>Smooth animations and transitions</li>
+                        <li>Modern UI/UX</li>
+                        <li>Optimized experience across devices</li>
+                    </ul>
+                </div>
 
-                <h4>Technology Stack</h4>
-                <div class="tech-stack">
+                <div class="tech-stack" aria-label="Technologies used">
                     <span class="tech-badge">HTML</span>
                     <span class="tech-badge">CSS</span>
                     <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Responsive Design</span>
                 </div>
 
                 <div class="project-actions">
-                    <a href="https://vipulbariya-code.github.io/Personal-portfolio/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Live Demo</a>
-                    <a href="https://github.com/vipulbariya-code/Personal-portfolio" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">View Source Code</a>
+                    <a href="https://vipulbariya-code.github.io/Personal-portfolio/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <span>Explore Project</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                    <a href="https://github.com/vipulbariya-code/Personal-portfolio" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        <span>View Source Code</span>
+                    </a>
                 </div>
             </div>
         </article>
@@ -431,9 +509,9 @@
       </div>
       <div class="t-item reveal">
         <span class="t-tag">Major Project</span>
-        <h3>Nexora Analytics Dashboard</h3>
-        <span class="t-when mono">Signature Work</span>
-        <p>Led end-to-end development of a real-time SaaS analytics platform — from data modeling to a fully responsive dashboard UI.</p>
+        <h3>CyberPort Scanner</h3>
+        <span class="t-when mono">Signature Security Work</span>
+        <p>Engineered an authorized network port scanner and security dashboard deployed live with Python, Flask, SQLite, and Chart.js to inspect TCP states, attack surfaces, and active services.</p>
       </div>
       <div class="t-item reveal">
         <span class="t-tag">Future Goal</span>

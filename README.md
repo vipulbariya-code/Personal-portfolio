@@ -13,7 +13,7 @@ Visit the portfolio: **[vipulbariya-code.github.io/Personal-portfolio](https://v
 
 ## Preview
 
-![Portfolio homepage preview](img1.2.png)
+![Portfolio homepage preview](Personal_protfolio_Home_page.png)
 
 ## Features
 
@@ -42,15 +42,26 @@ cd Personal-portfolio
 
 For the best local experience, serve the folder with a static-server extension or your preferred local development server.
 
+## Featured Projects
+
+- **[CyberPort Scanner](https://cyberport-scanner.onrender.com/)** — Professional TCP network port scanner for authorized security testing built with Python, Flask, SQLite, and Chart.js. [Source Code](https://github.com/vipulbariya-code/CyberPort-Scanner)
+- **[Pick My AI](https://pickmyai.vercel.app/)** — Discovery and comparison platform for creator and developer AI tools. [Source Code](https://github.com/vipulbariya-code/Pick-My-AI)
+- **[Personal Portfolio](https://vipulbariya-code.github.io/Personal-portfolio/)** — Modern, accessible, dark/light themed portfolio built with vanilla web technologies.
+
 ## Project structure
 
 ```text
 Personal-portfolio/
 ├── .github/workflows/deploy-pages.yml  # GitHub Pages deployment
 ├── index.html                          # Portfolio site
+├── script.js                           # UI logic, filters, theme & animations
+├── style.css                           # Design tokens, layout & responsive styling
+├── CyberPort_Scanner_Home_page.png     # CyberPort Scanner homepage preview
+├── pickmyai-preview.jpg                # Pick My AI preview
+├── Personal_protfolio_Home_page.png    # Homepage preview
 ├── imag1.jpeg                          # Profile image
-├── img1.2.png                          # Homepage preview
 ├── logo.png                            # Site logo
+├── Vipul-Bariya-Resume.html            # Printable resume
 └── README.md
 ```
 
