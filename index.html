@@ -64,11 +64,12 @@
     <nav aria-label="Primary">
       <ul>
         <li><a href="#top">Home</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#timeline">Journey</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#timeline">Journey</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -88,11 +89,12 @@
 
 <nav id="mobile-menu" aria-label="Mobile Navigation">
   <a href="#top">Home</a>
-  <a href="#work">Work</a>
-  <a href="#skills">Skills</a>
   <a href="#about">About</a>
-  <a href="#timeline">Journey</a>
+  <a href="#skills">Skills</a>
+  <a href="#work">Projects</a>
+  <a href="#certifications">Certifications</a>
   <a href="#services">Services</a>
+  <a href="#timeline">Journey</a>
   <a href="#contact">Contact</a>
 </nav>
 
@@ -380,44 +382,349 @@
 <section id="skills" style="background:var(--bg-alt);">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow">// skills</div>
+      <div class="eyebrow">// technical skills</div>
       <h2>Tools of the Craft</h2>
-      <p>A full-stack toolkit refined across dozens of production builds — from pixel-perfect interfaces to resilient backends.</p>
+      <p>Technical skills and practical toolkits I use to build modern web applications, AI-powered digital tools, and cybersecurity projects.</p>
     </div>
-    <div class="skills-wrap">
-      <div>
-        <div class="skill-group reveal">
-          <h4>Frontend</h4>
-          <div class="skill-row"><div class="label"><b>JavaScript</b><span>95%</span></div><div class="bar"><i data-w="95"></i></div></div>
-          <div class="skill-row"><div class="label"><b>React</b><span>92%</span></div><div class="bar"><i data-w="92"></i></div></div>
-          <div class="skill-row"><div class="label"><b>HTML &amp; CSS</b><span>97%</span></div><div class="bar"><i data-w="97"></i></div></div>
-          <div class="skill-row"><div class="label"><b>Tailwind CSS</b><span>90%</span></div><div class="bar"><i data-w="90"></i></div></div>
+
+    <div class="skills-categories-grid">
+
+      <!-- 1. Frontend Development -->
+      <div class="skill-category-card glass reveal">
+        <div class="category-header">
+          <div class="cat-icon-badge cat-fe">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <div>
+            <h3>Frontend Development</h3>
+            <span class="cat-meta mono">3 Core Technologies</span>
+          </div>
         </div>
-        <div class="skill-group reveal">
-          <h4>Backend &amp; Database</h4>
-          <div class="skill-row"><div class="label"><b>Node.js</b><span>88%</span></div><div class="bar"><i data-w="88"></i></div></div>
-          <div class="skill-row"><div class="label"><b>PHP</b><span>85%</span></div><div class="bar"><i data-w="85"></i></div></div>
-          <div class="skill-row"><div class="label"><b>MySQL</b><span>87%</span></div><div class="bar"><i data-w="87"></i></div></div>
-          <div class="skill-row"><div class="label"><b>MongoDB</b><span>82%</span></div><div class="bar"><i data-w="82"></i></div></div>
-        </div>
-      </div>
-      <div>
-        <div class="skill-group reveal">
-          <h4>CMS</h4>
-          <div class="skill-row"><div class="label"><b>WordPress</b><span>93%</span></div><div class="bar"><i data-w="93"></i></div></div>
-        </div>
-        <div class="skill-group reveal">
-          <h4>Tools &amp; Workflow</h4>
-          <div class="tool-grid">
-            <div class="glass tool-card"><div class="glyph">git</div><span>Git</span></div>
-            <div class="glass tool-card"><div class="glyph">{ }</div><span>GitHub</span></div>
-            <div class="glass tool-card"><div class="glyph">◆</div><span>Figma</span></div>
-            <div class="glass tool-card"><div class="glyph">&lt;/&gt;</div><span>VS Code</span></div>
-            <div class="glass tool-card"><div class="glyph">npm</div><span>Package Mgmt</span></div>
-            <div class="glass tool-card"><div class="glyph">CI</div><span>CI / CD</span></div>
+        <div class="skill-cards-grid">
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#e34f26;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 3l1.8 17 6.2 2 6.2-2 1.8-17H4z"/>
+                <path d="M8 8h8l-.5 5H9l.3 3 2.7.8 2.7-.8.3-2"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">HTML5</span>
+              <span class="skill-sub">Semantic &amp; Modern UI</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#264de4;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 3l1.8 17 6.2 2 6.2-2 1.8-17H4z"/>
+                <path d="M8.5 8h7l-.8 8-2.7.8-2.7-.8-.3-3"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">CSS3</span>
+              <span class="skill-sub">Responsive Layouts &amp; Styling</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#eab308;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="4" fill="#f7df1e"/>
+                <path d="M14.8 17.5c.7 1.1 1.6 1.8 3.1 1.8 1.4 0 2.2-.7 2.2-1.7 0-1.2-.9-1.6-2.2-2.1l-.8-.3c-2-.8-3.3-1.9-3.3-4.1 0-2.1 1.7-3.7 4.4-3.7 1.8 0 3.2.7 4.1 2.3l-2.3 1.4c-.4-.9-1.1-1.3-1.8-1.3-.9 0-1.5.5-1.5 1.3 0 .8.6 1.2 1.8 1.7l.8.3c2.4.9 3.5 2.2 3.5 4.5 0 2.5-2 4-5.1 4-2.8 0-4.6-1.6-5.4-3.3l2.5-1.4zM6.2 17.8l2.4-1.4c.5.9 1.1 1.5 2 1.5 1 0 1.6-.6 1.6-1.8V7.4h3.1v8.7c0 3-1.7 4.5-4.5 4.5-2.5 0-3.9-1.3-4.6-2.8z" fill="#18181b"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">JavaScript</span>
+              <span class="skill-sub">ES6+ &amp; Interactive Web</span>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- 2. Backend Development -->
+      <div class="skill-category-card glass reveal">
+        <div class="category-header">
+          <div class="cat-icon-badge cat-be">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <div>
+            <h3>Backend Development</h3>
+            <span class="cat-meta mono">3 Server Environments</span>
+          </div>
+        </div>
+        <div class="skill-cards-grid">
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#818cf8;">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <ellipse cx="16" cy="16" rx="15" ry="10" fill="rgba(99,102,241,0.15)" stroke="#818cf8" stroke-width="1.8"/>
+                <text x="16" y="20" font-family="'Space Grotesk',sans-serif" font-weight="800" font-size="10" fill="#818cf8" text-anchor="middle">PHP</text>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">PHP</span>
+              <span class="skill-sub">Server Logic &amp; Endpoints</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#3b82f6;">
+              <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M15.8 3C9.7 3 10.1 5.6 10.1 5.6L10.1 8.3H16V9.2H7.6C4.9 9.2 3 10.8 3 14.5C3 18.2 5.3 18.3 5.3 18.3H7.5V15.7C7.5 12.6 10.2 12.6 10.2 12.6H15.9C18.6 12.6 19.3 10.7 19.3 8.8C19.3 6.9 19.4 3 15.8 3ZM12.9 4.8C13.6 4.8 14.2 5.4 14.2 6.1C14.2 6.8 13.6 7.4 12.9 7.4C12.2 7.4 11.6 6.8 11.6 6.1C11.6 5.4 12.2 4.8 12.9 4.8Z" fill="#3b82f6"/>
+                <path d="M16.2 29C22.3 29 21.9 26.4 21.9 26.4L21.9 23.7H16V22.8H24.4C27.1 22.8 29 21.2 29 17.5C29 13.8 26.7 13.7 26.7 13.7H24.5V16.3C24.5 19.4 21.8 19.4 21.8 19.4H16.1C13.4 19.4 12.7 21.3 12.7 23.2C12.7 25.1 12.6 29 16.2 29ZM19.1 27.2C18.4 27.2 17.8 26.6 17.8 25.9C17.8 25.2 18.4 24.6 19.1 24.6C19.8 24.6 20.4 25.2 20.4 25.9C20.4 26.6 19.8 27.2 19.1 27.2Z" fill="#eab308"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">Python</span>
+              <span class="skill-sub">Automation &amp; Security Tools</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#5eead4;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10 2v4M14 2v4M6 10a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V10z"/>
+                <line x1="6" y1="14" x2="18" y2="14"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">Flask</span>
+              <span class="skill-sub">Routing &amp; Lightweight APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Database -->
+      <div class="skill-category-card glass reveal">
+        <div class="category-header">
+          <div class="cat-icon-badge cat-db">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <div>
+            <h3>Database Systems</h3>
+            <span class="cat-meta mono">2 Storage Engines</span>
+          </div>
+        </div>
+        <div class="skill-cards-grid">
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#0284c7;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <ellipse cx="12" cy="6" rx="8" ry="3"/>
+                <path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6"/>
+                <path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">MySQL</span>
+              <span class="skill-sub">Relational Schema &amp; Queries</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#10b981;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="3"/>
+                <path d="M4 9h16M9 4v16"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">SQLite</span>
+              <span class="skill-sub">Fast Embedded Data Engine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Cybersecurity -->
+      <div class="skill-category-card glass reveal">
+        <div class="category-header">
+          <div class="cat-icon-badge cat-sec">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3>Cybersecurity</h3>
+            <span class="cat-meta mono">4 Security Practices</span>
+          </div>
+        </div>
+        <div class="skill-cards-grid">
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#f43f5e;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">Network Security</span>
+              <span class="skill-sub">Host &amp; Traffic Inspection</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#f59e0b;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/>
+                <line x1="12" y1="3" x2="12" y2="21"/>
+                <line x1="3" y1="12" x2="21" y2="12"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">TCP Port Scanning</span>
+              <span class="skill-sub">Socket Probing &amp; Discovery</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#ec4899;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M12 2l3 7h7l-5.5 4.5 2 7.5L12 17l-6.5 4 2-7.5L2 9h7z"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">Security Testing</span>
+              <span class="skill-sub">Vulnerability &amp; Surface Analysis</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#a855f7;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <polyline points="4 17 10 11 4 5"/>
+                <line x1="12" y1="19" x2="20" y2="19"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">Security Fundamentals</span>
+              <span class="skill-sub">Kali Linux &amp; Protocol Defense</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. AI & APIs -->
+      <div class="skill-category-card glass reveal">
+        <div class="category-header">
+          <div class="cat-icon-badge cat-ai">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div>
+            <h3>AI &amp; APIs</h3>
+            <span class="cat-meta mono">3 Integration Capabilities</span>
+          </div>
+        </div>
+        <div class="skill-cards-grid">
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#d4a657;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">Gemini API</span>
+              <span class="skill-sub">LLM Prompting &amp; AI Workflows</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#5eead4;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/>
+                <line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/>
+                <line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="15" x2="23" y2="15"/>
+                <line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="15" x2="4" y2="15"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">AI Tool Integration</span>
+              <span class="skill-sub">Smart Automation &amp; Pipelines</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#06b6d4;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M16 16l4-4-4-4M8 8l-4 4 4 4"/>
+                <line x1="14" y1="4" x2="10" y2="20"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">API Integration</span>
+              <span class="skill-sub">RESTful JSON &amp; Client-Server</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Tools & Development -->
+      <div class="skill-category-card glass reveal">
+        <div class="category-header">
+          <div class="cat-icon-badge cat-tool">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div>
+            <h3>Tools &amp; Workflow</h3>
+            <span class="cat-meta mono">4 Essential Utilities</span>
+          </div>
+        </div>
+        <div class="skill-cards-grid">
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#f05032;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="9" r="3"/>
+                <line x1="6" y1="9" x2="6" y2="15"/>
+                <path d="M18 12v3a6 6 0 0 1-6 6H6"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">Git</span>
+              <span class="skill-sub">Version Control &amp; Branching</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:var(--ink);">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">GitHub</span>
+              <span class="skill-sub">Repository Hosting &amp; CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#007acc;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+                <line x1="14" y1="4" x2="10" y2="20"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">VS Code</span>
+              <span class="skill-sub">Primary Code Editor</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap" style="color:#fb923c;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 7v10M7 12h10"/>
+              </svg>
+            </div>
+            <div class="skill-info">
+              <span class="skill-title">XAMPP</span>
+              <span class="skill-sub">Local Apache &amp; MariaDB Stack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -428,35 +735,84 @@
   <div class="container">
     <div class="about-grid">
 
-      <!-- Profile Image -->
-      <div class="about-photo glass reveal">
-        <img src="./imag1.jpeg" alt="Vipul Bariya">
+      <!-- Hanging Tablet / Framed Photo -->
+      <div class="about-photo-container reveal">
+        <!-- Top Hanging Strap & Bracket -->
+        <div class="hanging-strap" aria-hidden="true">
+          <div class="strap-ribbon"></div>
+          <div class="strap-clip">
+            <span class="clip-slot"></span>
+          </div>
+        </div>
+
+        <!-- Tilted Tablet Frame -->
+        <div class="about-frame">
+          <div class="frame-screen">
+            <img src="./imag1.jpeg" alt="Vipul Bariya - Full-Stack Web Developer and Cybersecurity Learner" loading="lazy">
+            <div class="frame-shine" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- 4-point Sparkle Stars (as in reference image) -->
+        <svg class="sparkle-star star-bottom-left" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z"/>
+        </svg>
+        <svg class="sparkle-star star-top-right" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z"/>
+        </svg>
       </div>
 
       <!-- About Text -->
       <div class="about-text reveal">
         <div class="eyebrow">// about me</div>
 
-        <h2 style="font-size:clamp(1.8rem,3.6vw,2.4rem);margin-bottom:20px;">
-          The Developer Behind the Code
+        <h2 class="about-title">
+          Hello!
         </h2>
 
-        <p>
-          Hi, I'm <strong>Vipul Bariya</strong>, a passionate Full-Stack Web Developer
-          and Cybersecurity Learner from Gujarat, India. I enjoy creating modern,
-          responsive, and high-performance websites.
+        <p class="about-intro">
+          I'm <strong>Vipul Bariya</strong>, a Full-Stack Web Developer and Cybersecurity Learner passionate about crafting secure, high-performance web applications and AI-powered digital tools. I blend creative design with scalable architecture to build products that solve real-world problems.
         </p>
 
         <p>
-          I work with HTML, CSS, JavaScript, PHP, WordPress, MySQL, and I'm also
-          learning Ethical Hacking, Kali Linux, Networking, and AI technologies.
+          My core engineering stack centers around <strong>Python</strong>, <strong>JavaScript</strong>, <strong>PHP</strong>, and <strong>MySQL/SQLite</strong>, paired with hands-on practice in Network Security, Ethical Hacking, Kali Linux, and modern AI API integrations.
         </p>
 
-        <p>
-          My goal is to become a professional Software Engineer and Cybersecurity
-          Expert while building innovative digital products that solve real-world
-          problems.
-        </p>
+        <!-- Tech Stack Icons Row (Reflecting Authentic Portfolio Technologies) -->
+        <div class="about-tech-row" aria-label="Demonstrated Core Technologies">
+          <div class="tech-badge tech-python" title="Python">
+            <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M15.8 3C9.7 3 10.1 5.6 10.1 5.6L10.1 8.3H16V9.2H7.6C4.9 9.2 3 10.8 3 14.5C3 18.2 5.3 18.3 5.3 18.3H7.5V15.7C7.5 12.6 10.2 12.6 10.2 12.6H15.9C18.6 12.6 19.3 10.7 19.3 8.8C19.3 6.9 19.4 3 15.8 3ZM12.9 4.8C13.6 4.8 14.2 5.4 14.2 6.1C14.2 6.8 13.6 7.4 12.9 7.4C12.2 7.4 11.6 6.8 11.6 6.1C11.6 5.4 12.2 4.8 12.9 4.8Z" fill="#3b82f6"/>
+              <path d="M16.2 29C22.3 29 21.9 26.4 21.9 26.4L21.9 23.7H16V22.8H24.4C27.1 22.8 29 21.2 29 17.5C29 13.8 26.7 13.7 26.7 13.7H24.5V16.3C24.5 19.4 21.8 19.4 21.8 19.4H16.1C13.4 19.4 12.7 21.3 12.7 23.2C12.7 25.1 12.6 29 16.2 29ZM19.1 27.2C18.4 27.2 17.8 26.6 17.8 25.9C17.8 25.2 18.4 24.6 19.1 24.6C19.8 24.6 20.4 25.2 20.4 25.9C20.4 26.6 19.8 27.2 19.1 27.2Z" fill="#eab308"/>
+            </svg>
+            <span class="tech-label">Python</span>
+          </div>
+
+          <div class="tech-badge tech-js" title="JavaScript">
+            <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="6" fill="#f7df1e"/>
+              <path d="M18.8 22.5C19.7 24 20.9 25.1 23 25.1C24.8 25.1 26 24.2 26 22.7C26 21 24.9 20.4 23.1 19.6L22.1 19.2C19.3 18 17.5 16.5 17.5 13.3C17.5 10.2 20 7.8 24 7.8C26.7 7.8 28.7 8.9 29.9 11.2L26.7 13.2C26.1 11.9 25.2 11.2 23.9 11.2C22.6 11.2 21.7 12 21.7 13.2C21.7 14.5 22.6 15 24.4 15.8L25.4 16.2C28.8 17.6 30.3 19.4 30.3 22.8C30.3 26.5 27.3 28.6 23.1 28.6C19.1 28.6 16.7 26.3 15.4 23.8L18.8 22.5ZM6.5 22.8L10 20.7C10.7 21.9 11.4 22.8 12.8 22.8C14.1 22.8 15 22.1 15 20.2V8.2H19.2V20.2C19.2 24.7 16.7 26.9 12.7 26.9C9.2 26.9 7.2 25.1 6.5 22.8Z" fill="#18181b"/>
+            </svg>
+            <span class="tech-label">JavaScript</span>
+          </div>
+
+          <div class="tech-badge tech-php" title="PHP">
+            <svg width="42" height="36" viewBox="0 0 48 32" fill="none" aria-hidden="true">
+              <ellipse cx="24" cy="16" rx="23" ry="15" fill="#4f5b93" fill-opacity="0.18" stroke="#777bb4" stroke-width="2"/>
+              <text x="24" y="21" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="14" fill="#777bb4" text-anchor="middle" letter-spacing="1">PHP</text>
+            </svg>
+            <span class="tech-label">PHP</span>
+          </div>
+
+          <div class="tech-badge tech-mysql" title="MySQL">
+            <svg width="38" height="36" viewBox="0 0 36 32" fill="none" aria-hidden="true">
+              <path d="M18 4C10.3 4 4 6.7 4 10V22C4 25.3 10.3 28 18 28C25.7 28 32 25.3 32 22V10C32 6.7 25.7 4 18 4Z" fill="#0284c7" fill-opacity="0.14" stroke="#0ea5e9" stroke-width="2"/>
+              <path d="M4 16C4 19.3 10.3 22 18 22C25.7 22 32 19.3 32 16" stroke="#0ea5e9" stroke-width="1.8"/>
+              <path d="M4 10C4 13.3 10.3 16 18 16C25.7 16 32 13.3 32 10" stroke="#0ea5e9" stroke-width="1.8"/>
+            </svg>
+            <span class="tech-label">MySQL</span>
+          </div>
+        </div>
 
         <div class="about-stats">
           <div>
@@ -523,22 +879,372 @@
   </div>
 </section>
 
+<!-- ============ CERTIFICATIONS ============ -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">// certifications</div>
+      <h2>Professional Certifications.</h2>
+      <p>A collection of certifications and learning achievements that support my journey in cybersecurity, web development, and modern technology.</p>
+    </div>
+
+    <div class="certs-grid">
+
+      <!-- 1. Cisco -->
+      <article class="cert-card glass reveal" aria-label="Cisco - Introduction to Cybersecurity">
+        <div class="cert-card-header">
+          <div class="cert-org-visual">
+            <div class="cert-icon-frame cert-cisco-theme">
+              <svg width="34" height="24" viewBox="0 0 90 60" fill="currentColor" aria-hidden="true">
+                <rect x="2" y="32" width="6" height="26" rx="3"/>
+                <rect x="12" y="20" width="6" height="38" rx="3"/>
+                <rect x="22" y="32" width="6" height="26" rx="3"/>
+                <rect x="32" y="8" width="6" height="50" rx="3"/>
+                <rect x="42" y="0" width="6" height="58" rx="3"/>
+                <rect x="52" y="8" width="6" height="50" rx="3"/>
+                <rect x="62" y="32" width="6" height="26" rx="3"/>
+                <rect x="72" y="20" width="6" height="38" rx="3"/>
+                <rect x="82" y="32" width="6" height="26" rx="3"/>
+              </svg>
+            </div>
+            <div>
+              <span class="cert-issuer">Cisco</span>
+              <span class="cert-issuer-sub mono">Networking Academy</span>
+            </div>
+          </div>
+          <span class="cert-status-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            Verified
+          </span>
+        </div>
+
+        <div class="cert-card-body">
+          <div class="cert-domain-tag mono">// CYBERSECURITY</div>
+          <h3 class="cert-title">Introduction to Cybersecurity</h3>
+          <p class="cert-desc">
+            Foundational cybersecurity learning covering core cybersecurity concepts, threats, security awareness, and the role of cybersecurity in protecting digital systems.
+          </p>
+        </div>
+
+        <div class="cert-card-footer">
+          <div class="cert-meta-chips">
+            <span class="cert-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Core Security
+            </span>
+            <span class="cert-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Foundational
+            </span>
+          </div>
+          <span class="cert-curriculum-badge mono">Official Curriculum</span>
+        </div>
+      </article>
+
+      <!-- 2. IBM -->
+      <article class="cert-card glass reveal" aria-label="IBM - Cybersecurity Fundamentals">
+        <div class="cert-card-header">
+          <div class="cert-org-visual">
+            <div class="cert-icon-frame cert-ibm-theme">
+              <svg width="40" height="20" viewBox="0 0 72 32" fill="currentColor" aria-hidden="true">
+                <text x="2" y="24" font-family="'Space Grotesk', -apple-system, sans-serif" font-weight="900" font-size="28" letter-spacing="2">IBM</text>
+              </svg>
+            </div>
+            <div>
+              <span class="cert-issuer">IBM</span>
+              <span class="cert-issuer-sub mono">SkillsBuild</span>
+            </div>
+          </div>
+          <span class="cert-status-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            Verified
+          </span>
+        </div>
+
+        <div class="cert-card-body">
+          <div class="cert-domain-tag mono">// CYBERSECURITY</div>
+          <h3 class="cert-title">Cybersecurity Fundamentals</h3>
+          <p class="cert-desc">
+            Cybersecurity fundamentals covering essential security concepts, common threats, security practices, and foundational cybersecurity knowledge.
+          </p>
+        </div>
+
+        <div class="cert-card-footer">
+          <div class="cert-meta-chips">
+            <span class="cert-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Threat Defense
+            </span>
+            <span class="cert-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Security Essentials
+            </span>
+          </div>
+          <span class="cert-curriculum-badge mono">Official Curriculum</span>
+        </div>
+      </article>
+
+      <!-- 3. Coursera -->
+      <article class="cert-card glass reveal" aria-label="Coursera - Foundations of Cybersecurity">
+        <div class="cert-card-header">
+          <div class="cert-org-visual">
+            <div class="cert-icon-frame cert-coursera-theme">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="14" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="2"/>
+                <path d="M21 11.5C19.8 10 18 9 16 9C12.1 9 9 12.1 9 16C9 19.9 12.1 23 16 23C18 23 19.8 22 21 20.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="cert-issuer">Coursera</span>
+              <span class="cert-issuer-sub mono">Specialization Course</span>
+            </div>
+          </div>
+          <span class="cert-status-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            Verified
+          </span>
+        </div>
+
+        <div class="cert-card-body">
+          <div class="cert-domain-tag mono">// CYBERSECURITY</div>
+          <h3 class="cert-title">Foundations of Cybersecurity</h3>
+          <p class="cert-desc">
+            Foundational cybersecurity coursework covering core security concepts, cybersecurity roles, common threats, and essential security practices.
+          </p>
+        </div>
+
+        <div class="cert-card-footer">
+          <div class="cert-meta-chips">
+            <span class="cert-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Industry Roles
+            </span>
+            <span class="cert-chip">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Security Practice
+            </span>
+          </div>
+          <span class="cert-curriculum-badge mono">Official Curriculum</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 <!-- ============ SERVICES ============ -->
 <section id="services">
   <div class="container">
     <div class="section-head reveal">
       <div class="eyebrow">// services</div>
-      <h2>How I Can Help</h2>
-      <p>From a single landing page to a full custom platform — here's where I add the most value.</p>
+      <h2>Services.</h2>
+      <p>Practical digital solutions focused on modern web development, cybersecurity, AI integration, and scalable applications.</p>
     </div>
+
     <div class="services-grid">
-      <div class="glass service-card reveal"><div class="num mono">01</div><h3>Custom Website Development</h3><p>Fully bespoke websites built from the ground up around your brand and goals.</p></div>
-      <div class="glass service-card reveal"><div class="num mono">02</div><h3>WordPress Development</h3><p>Custom themes, plugins, and Gutenberg blocks for fast, editable WordPress sites.</p></div>
-      <div class="glass service-card reveal"><div class="num mono">03</div><h3>Responsive Design</h3><p>Interfaces that feel native on every device, from mobile to ultra-wide desktop.</p></div>
-      <div class="glass service-card reveal"><div class="num mono">04</div><h3>Landing Pages</h3><p>High-converting, performance-tuned pages built to turn visitors into customers.</p></div>
-      <div class="glass service-card reveal"><div class="num mono">05</div><h3>Portfolio Websites</h3><p>Personal and creative portfolios that make a confident first impression.</p></div>
-      <div class="glass service-card reveal"><div class="num mono">06</div><h3>Website Maintenance</h3><p>Ongoing updates, monitoring, and support to keep your site secure and fast.</p></div>
-      <div class="glass service-card reveal"><div class="num mono">07</div><h3>SEO Optimization</h3><p>Technical and on-page SEO to help your site get found by the right people.</p></div>
+
+      <!-- 1. Web Development -->
+      <article class="service-card glass reveal" aria-label="Web Development Service">
+        <div class="service-card-top">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <polyline points="8 9 5 12 8 15"/>
+              <polyline points="16 9 19 12 16 15"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <span class="service-card-num mono">01</span>
+        </div>
+
+        <h3 class="service-title">Web Development</h3>
+        <p class="service-desc">
+          Responsive and modern websites built with clean HTML, CSS, and JavaScript, with a focus on usability, performance, and responsive design.
+        </p>
+
+        <div class="service-tags">
+          <span class="service-tag mono">HTML5</span>
+          <span class="service-tag mono">CSS3</span>
+          <span class="service-tag mono">JavaScript</span>
+        </div>
+
+        <div class="service-card-footer">
+          <a href="#work" class="service-project-link">
+            <span>View related projects</span>
+            <span class="service-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- 2. Full-Stack Web Development -->
+      <article class="service-card glass reveal" aria-label="Full-Stack Web Development Service">
+        <div class="service-card-top">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <span class="service-card-num mono">02</span>
+        </div>
+
+        <h3 class="service-title">Full-Stack Web Development</h3>
+        <p class="service-desc">
+          Dynamic web applications with frontend interfaces, backend logic, database integration, authentication, and API-based functionality.
+        </p>
+
+        <div class="service-tags">
+          <span class="service-tag mono">PHP</span>
+          <span class="service-tag mono">Python</span>
+          <span class="service-tag mono">Flask</span>
+          <span class="service-tag mono">MySQL</span>
+          <span class="service-tag mono">SQLite</span>
+          <span class="service-tag mono">JavaScript</span>
+        </div>
+
+        <div class="service-card-footer">
+          <a href="#work" class="service-project-link">
+            <span>View full-stack builds</span>
+            <span class="service-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- 3. Cybersecurity Projects -->
+      <article class="service-card glass reveal" aria-label="Cybersecurity Projects Service">
+        <div class="service-card-top">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+          </div>
+          <span class="service-card-num mono">03</span>
+        </div>
+
+        <h3 class="service-title">Cybersecurity Projects</h3>
+        <p class="service-desc">
+          Educational and authorized cybersecurity solutions focused on network security concepts, TCP port scanning, security testing, and security awareness.
+        </p>
+
+        <div class="service-tags">
+          <span class="service-tag mono">Python</span>
+          <span class="service-tag mono">Flask</span>
+          <span class="service-tag mono">Network Security</span>
+          <span class="service-tag mono">TCP Port Scanning</span>
+          <span class="service-tag mono">Security Testing</span>
+        </div>
+
+        <div class="service-card-footer">
+          <a href="#work" class="service-project-link">
+            <span>Featured in CyberPort Scanner</span>
+            <span class="service-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- 4. AI Integration -->
+      <article class="service-card glass reveal" aria-label="AI Integration Service">
+        <div class="service-card-top">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/>
+              <path d="M19 2l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/>
+            </svg>
+          </div>
+          <span class="service-card-num mono">04</span>
+        </div>
+
+        <h3 class="service-title">AI Integration</h3>
+        <p class="service-desc">
+          AI-powered web features and workflows using APIs to create intelligent recommendations, tool discovery, and automation experiences.
+        </p>
+
+        <div class="service-tags">
+          <span class="service-tag mono">Gemini API</span>
+          <span class="service-tag mono">JavaScript</span>
+          <span class="service-tag mono">PHP</span>
+          <span class="service-tag mono">API Integration</span>
+        </div>
+
+        <div class="service-card-footer">
+          <a href="#work" class="service-project-link">
+            <span>Featured in Pick My AI</span>
+            <span class="service-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- 5. API Integration -->
+      <article class="service-card glass reveal" aria-label="API Integration Service">
+        <div class="service-card-top">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 18l6-6-6-6"/>
+              <path d="M8 6l-6 6 6 6"/>
+              <line x1="14" y1="4" x2="10" y2="20"/>
+            </svg>
+          </div>
+          <span class="service-card-num mono">05</span>
+        </div>
+
+        <h3 class="service-title">API Integration</h3>
+        <p class="service-desc">
+          Integration of REST-style APIs into web applications for dynamic data, AI functionality, recommendations, and application workflows.
+        </p>
+
+        <div class="service-tags">
+          <span class="service-tag mono">REST APIs</span>
+          <span class="service-tag mono">JSON</span>
+          <span class="service-tag mono">JavaScript</span>
+          <span class="service-tag mono">PHP</span>
+          <span class="service-tag mono">Gemini API</span>
+        </div>
+
+        <div class="service-card-footer">
+          <a href="#work" class="service-project-link">
+            <span>View API implementations</span>
+            <span class="service-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- 6. Portfolio & Business Websites -->
+      <article class="service-card glass reveal" aria-label="Portfolio & Business Websites Service">
+        <div class="service-card-top">
+          <div class="service-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <line x1="3" y1="9" x2="21" y2="9"/>
+              <line x1="9" y1="21" x2="9" y2="9"/>
+              <circle cx="6" cy="6" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="service-card-num mono">06</span>
+        </div>
+
+        <h3 class="service-title">Portfolio & Business Websites</h3>
+        <p class="service-desc">
+          Responsive portfolio and business websites designed to present services, projects, information, and professional identity through a modern interface.
+        </p>
+
+        <div class="service-tags">
+          <span class="service-tag mono">HTML</span>
+          <span class="service-tag mono">CSS</span>
+          <span class="service-tag mono">JavaScript</span>
+          <span class="service-tag mono">Responsive Design</span>
+        </div>
+
+        <div class="service-card-footer">
+          <a href="#work" class="service-project-link">
+            <span>Featured in Personal Portfolio</span>
+            <span class="service-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>

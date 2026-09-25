@@ -85,29 +85,6 @@ if (revealEls.length) {
     }
 }
 
-/* Skills bar animation */
-const skillBars = document.querySelectorAll('.bar i[data-w]');
-
-if (skillBars.length) {
-    if ('IntersectionObserver' in window) {
-        const barObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const bar = entry.target;
-                    bar.style.width = bar.getAttribute('data-w') + '%';
-                    barObserver.unobserve(bar);
-                }
-            });
-        }, { threshold: 0.4 });
-
-        skillBars.forEach(bar => barObserver.observe(bar));
-    } else {
-        skillBars.forEach(bar => {
-            bar.style.width = bar.getAttribute('data-w') + '%';
-        });
-    }
-}
-
 /* Project filters */
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('#projectGrid .pcard, #projectGrid .project-card-enhanced');
@@ -251,6 +228,69 @@ if (hamburger && mmenu) {
         }
     });
 }
+
+/* Active Navigation Highlighting */
+(function() {
+    const desktopLinks = document.querySelectorAll('nav[aria-label="Primary"] a');
+    const mobileLinks = document.querySelectorAll('#mobile-menu a');
+    const allNavLinks = [...desktopLinks, ...mobileLinks];
+
+    const sectionIds = ['top', 'about', 'skills', 'work', 'certifications', 'services', 'timeline', 'contact'];
+    const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+
+    function setActiveLink(activeId) {
+        allNavLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            const isActive = href === `#${activeId}`;
+            link.classList.toggle('active', isActive);
+            if (isActive) {
+                link.setAttribute('aria-current', 'page');
+            } else {
+                link.removeAttribute('aria-current');
+            }
+        });
+    }
+
+    if (sections.length) {
+        function updateActiveByScroll() {
+            const scrollPos = window.scrollY + 220;
+            const scrollBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 80;
+
+            if (scrollBottom) {
+                setActiveLink('contact');
+                return;
+            }
+
+            if (window.scrollY < 120) {
+                setActiveLink('top');
+                return;
+            }
+
+            let currentSectionId = 'top';
+            for (let i = 0; i < sections.length; i++) {
+                const section = sections[i];
+                if (scrollPos >= section.offsetTop) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            }
+            setActiveLink(currentSectionId);
+        }
+
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    updateActiveByScroll();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+
+        // Initial invocation
+        updateActiveByScroll();
+    }
+})();
 
 /* Contact */
 const form = document.getElementById('contactForm');
