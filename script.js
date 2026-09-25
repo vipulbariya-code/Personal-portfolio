@@ -46,6 +46,7 @@ if (themeToggle) {
         if (!loader || loader.dataset.hidden === "true") return;
         loader.dataset.hidden = "true";
         loader.classList.add('hide');
+        document.body.classList.add('site-loaded');
 
         setTimeout(() => {
             loader.style.display = "none";
@@ -61,7 +62,13 @@ if (themeToggle) {
         }
         /* Safety net: guarantees loader hides even if network or external assets hang */
         setTimeout(hideLoader, 2500);
+    } else {
+        document.body.classList.add('site-loaded');
     }
+    // Guaranteed fallback for hero animation trigger
+    setTimeout(() => {
+        document.body.classList.add('site-loaded');
+    }, 1500);
 })();
 
 /* Scroll reveal animation */
@@ -85,7 +92,7 @@ if (revealEls.length) {
     }
 }
 
-/* Project filters */
+/* Project filters with smooth transition */
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('#projectGrid .pcard, #projectGrid .project-card-enhanced');
 
@@ -108,7 +115,21 @@ if (filterBtns.length && projectCards.length) {
                 if (card.classList.contains('legacy')) return;
                 const cat = card.getAttribute('data-cat');
                 const show = filter === 'all' || cat === filter;
-                card.classList.toggle('hidden', !show);
+                
+                if (show) {
+                    card.classList.remove('hidden');
+                    // Ensure reveal state is honored
+                    card.classList.add('in');
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(12px)';
+                    requestAnimationFrame(() => {
+                        card.style.transition = 'opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    });
+                } else {
+                    card.classList.add('hidden');
+                }
             });
         });
     });
@@ -144,7 +165,7 @@ if (dot && ring && glow && window.matchMedia('(hover: hover)').matches) {
         }
         dot.style.left = mx + 'px';
         dot.style.top = my + 'px';
-    });
+    }, { passive: true });
 
     function loop() {
         if (initialized) {
@@ -167,6 +188,54 @@ if (dot && ring && glow && window.matchMedia('(hover: hover)').matches) {
         el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-active'));
     });
 }
+
+/* Subtle 3D tilt on Hero Editor for desktop pointers */
+(function() {
+    if (!window.matchMedia('(hover: hover) and (min-width: 992px)').matches) return;
+    const hero = document.getElementById('top');
+    const editor = document.querySelector('.editor');
+    if (!hero || !editor) return;
+
+    let rafId = null;
+    let targetRx = 0, targetRy = 0;
+    let currentRx = 0, currentRy = 0;
+
+    hero.addEventListener('mousemove', (e) => {
+        const rect = hero.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        targetRy = x * 6; // max 3deg each way
+        targetRx = -y * 6;
+
+        if (!rafId) {
+            rafId = requestAnimationFrame(updateTilt);
+        }
+    }, { passive: true });
+
+    hero.addEventListener('mouseleave', () => {
+        targetRx = 0;
+        targetRy = 0;
+        if (!rafId) {
+            rafId = requestAnimationFrame(updateTilt);
+        }
+    });
+
+    function updateTilt() {
+        currentRx += (targetRx - currentRx) * 0.12;
+        currentRy += (targetRy - currentRy) * 0.12;
+        
+        if (Math.abs(targetRx - currentRx) < 0.02 && Math.abs(targetRy - currentRy) < 0.02) {
+            currentRx = targetRx;
+            currentRy = targetRy;
+            editor.style.transform = currentRx === 0 ? '' : `perspective(1000px) rotateX(${currentRx.toFixed(2)}deg) rotateY(${currentRy.toFixed(2)}deg)`;
+            rafId = null;
+            return;
+        }
+
+        editor.style.transform = `perspective(1000px) rotateX(${currentRx.toFixed(2)}deg) rotateY(${currentRy.toFixed(2)}deg)`;
+        rafId = requestAnimationFrame(updateTilt);
+    }
+})();
 
 /* Header & Back to Top */
 const header = document.getElementById('siteHeader');
