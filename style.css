@@ -110,7 +110,8 @@ section{position:relative;padding:120px 0;}
   backdrop-filter:blur(10px);
 }
 .btn-ghost:hover{border-color:rgba(255,255,255,0.25); transform:translateY(-2px); background-color: rgba(255,255,255,0.05);}
-[data-theme="light"] .btn-ghost:hover{border-color:rgba(21,31,52,0.25);}
+[data-theme="light"] .btn-ghost{background:rgba(21,31,52,0.05); border-color:rgba(21,31,52,0.18); color:#151f34;}
+[data-theme="light"] .btn-ghost:hover{border-color:rgba(21,31,52,0.35); background:rgba(21,31,52,0.09);}
 
 /* Glass card */
 .glass{

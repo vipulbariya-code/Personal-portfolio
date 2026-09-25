@@ -94,10 +94,12 @@ if (filterBtns.length && projectCards.length) {
         btn.addEventListener('click', () => {
             filterBtns.forEach(b => {
                 b.classList.remove('active');
+                b.setAttribute('aria-pressed', 'false');
                 b.setAttribute('aria-selected', 'false');
             });
 
             btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
             btn.setAttribute('aria-selected', 'true');
 
             const filter = btn.getAttribute('data-filter');
@@ -302,21 +304,29 @@ if (form && status) {
 
         if (!form.checkValidity()) {
             form.reportValidity();
+            status.style.color = "#f43f5e";
             status.textContent = "Please complete all required fields with a valid email address.";
             return;
         }
 
         const data = new FormData(form);
-        const subject = data.get('subject') || 'Portfolio Inquiry';
-        const message = [
-            `Name: ${data.get('name')}`,
-            `Email: ${data.get('email')}`,
-            '',
-            data.get('message')
-        ].join('\n');
-        const mailto = `mailto:vipulvbariya31@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+        const name = (data.get('name') || '').trim();
+        const email = (data.get('email') || '').trim();
+        const subject = (data.get('subject') || '').trim() || 'Portfolio / Internship Inquiry';
+        const message = (data.get('message') || '').trim();
 
-        status.textContent = "Opening your email app to send the message.";
+        const fullMessage = [
+            `From: ${name}`,
+            `Email: ${email}`,
+            '',
+            `Message:`,
+            message
+        ].join('\n');
+
+        const mailto = `mailto:vipulvbariya31@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullMessage)}`;
+
+        status.style.color = "var(--teal, #5eead4)";
+        status.textContent = "Opening your default email application to send the message...";
         window.location.href = mailto;
         form.reset();
     });

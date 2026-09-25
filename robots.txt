@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vipulbariya-code.github.io/Personal-portfolio/sitemap.xml

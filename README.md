@@ -1,76 +1,55 @@
-# Personal Portfolio
+# Personal Portfolio — Bariya Vipul Kumar
 
 [![Live site](https://img.shields.io/badge/Live%20site-GitHub%20Pages-2ea44f?style=for-the-badge&logo=github)](https://vipulbariya-code.github.io/Personal-portfolio/)
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
 
-A responsive personal portfolio for Vipul Bariya, a full-stack web developer and cybersecurity learner. It highlights skills, services, projects, experience, and ways to get in touch.
+A responsive, accessible personal developer portfolio for **Bariya Vipul Kumar**, a 7th-semester B.Tech Computer Engineering student at **Ganpat University – U. V. Patel College of Engineering**, actively seeking an **8th-semester internship opportunity** in Web Development, PHP Development, and Cybersecurity.
 
-## Live site
+## Live Website
 
 Visit the portfolio: **[vipulbariya-code.github.io/Personal-portfolio](https://vipulbariya-code.github.io/Personal-portfolio/)**
 
 ## Preview
 
-![Portfolio homepage preview](Personal_protfolio_Home_page.png)
+![Portfolio preview](Personal_protfolio_Home_page.png)
 
-## Features
+## Core Technical Skills
 
-- Responsive, dark-themed design for desktop and mobile devices
-- Project filtering and animated skill bars
-- Accessible navigation, focus styles, and reduced-motion support
-- Mobile menu and smooth scrolling
-- Contact form validation with an email-client fallback
-- GitHub Pages deployment workflow
+- **Web Development**: HTML5, CSS3, JavaScript, PHP, Flask
+- **Databases**: MySQL, SQLite
+- **Tools**: Git, GitHub, VS Code, XAMPP
+- **Cybersecurity & AI**: Network Security, TCP Port Scanning, Security Testing, Gemini API
 
-## Built with
+## Featured Projects
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- GitHub Pages
+- **[CyberPort Scanner](https://cyberport-scanner.onrender.com/)** — Cybersecurity network reconnaissance tool to analyze network security by scanning open ports and detecting running services. Built with Python, Flask, SQLite, and Chart.js. [Source Code](https://github.com/vipulbariya-code/CyberPort-Scanner)
+- **[Pick My AI](https://pickmyai.vercel.app/)** — AI tool discovery and comparison platform with Gemini API integration. Built with PHP, MySQL, and JavaScript.
+- **[Personal Portfolio](https://vipulbariya-code.github.io/Personal-portfolio/)** — Modern, accessible, dark/light themed portfolio built with vanilla HTML, CSS, and JavaScript. [Source Code](https://github.com/vipulbariya-code/Personal-portfolio)
 
-## Run locally
+## Certifications
 
-Clone the repository and open `index.html` in a browser. No build step or dependencies are required.
+- **Introduction to Cybersecurity** — Cisco Networking Academy
+- **Cybersecurity Fundamentals** — IBM
+- **Foundations of Cybersecurity** — Coursera
+
+## Run Locally
+
+Clone the repository and open `index.html` in any modern web browser:
 
 ```bash
 git clone https://github.com/vipulbariya-code/Personal-portfolio.git
 cd Personal-portfolio
 ```
 
-For the best local experience, serve the folder with a static-server extension or your preferred local development server.
-
-## Featured Projects
-
-- **[CyberPort Scanner](https://cyberport-scanner.onrender.com/)** — Professional TCP network port scanner for authorized security testing built with Python, Flask, SQLite, and Chart.js. [Source Code](https://github.com/vipulbariya-code/CyberPort-Scanner)
-- **[Pick My AI](https://pickmyai.vercel.app/)** — Discovery and comparison platform for creator and developer AI tools. [Source Code](https://github.com/vipulbariya-code/Pick-My-AI)
-- **[Personal Portfolio](https://vipulbariya-code.github.io/Personal-portfolio/)** — Modern, accessible, dark/light themed portfolio built with vanilla web technologies.
-
-## Project structure
-
-```text
-Personal-portfolio/
-├── .github/workflows/deploy-pages.yml  # GitHub Pages deployment
-├── index.html                          # Portfolio site
-├── script.js                           # UI logic, filters, theme & animations
-├── style.css                           # Design tokens, layout & responsive styling
-├── CyberPort_Scanner_Home_page.png     # CyberPort Scanner homepage preview
-├── pickmyai-preview.jpg                # Pick My AI preview
-├── Personal_protfolio_Home_page.png    # Homepage preview
-├── imag1.jpeg                          # Profile image
-├── logo.png                            # Site logo
-├── Vipul-Bariya-Resume.html            # Printable resume
-└── README.md
-```
-
 ## Connect
 
-- GitHub: [@vipulbariya-code](https://github.com/vipulbariya-code)
-- LinkedIn: [Vipul Bariya](https://www.linkedin.com/in/vipul-bariya-23a46426b/)
-- Email: [vipulvbariya31@gmail.com](mailto:vipulvbariya31@gmail.com)
+- **GitHub**: [@vipulbariya-code](https://github.com/vipulbariya-code)
+- **LinkedIn**: [Vipul Bariya](https://www.linkedin.com/in/vipul-bariya-23a46426b/)
+- **Instagram**: [@vipul._x07](https://www.instagram.com/vipul._x07)
+- **Email**: [vipulvbariya31@gmail.com](mailto:vipulvbariya31@gmail.com)
 
 ## License
 
-This project is available for personal reference. Please contact the author before reusing portfolio content or assets.
+This project is available for personal reference.
