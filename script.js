@@ -93,7 +93,7 @@ if (revealEls.length) {
 }
 
 /* Project filters with smooth transition */
-const filterBtns = document.querySelectorAll('.filter-btn');
+const filterBtns = document.querySelectorAll('#work .filter-btn');
 const projectCards = document.querySelectorAll('#projectGrid .pcard, #projectGrid .project-card-enhanced');
 
 if (filterBtns.length && projectCards.length) {
@@ -442,3 +442,204 @@ if ('IntersectionObserver' in window) {
 
     projectImages.forEach(img => imageObserver.observe(img));
 }
+
+/* ============ CERTIFICATIONS FILTER CONTROLLER ============ */
+(function () {
+    const certFilterBtns = document.querySelectorAll('.cert-filter-btn');
+    const certCards = document.querySelectorAll('.certs-grid .cert-card');
+    if (!certFilterBtns.length || !certCards.length) return;
+
+    certFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-filter') || 'all';
+
+            certFilterBtns.forEach(b => {
+                b.classList.remove('active');
+                b.setAttribute('aria-pressed', 'false');
+                b.setAttribute('aria-selected', 'false');
+            });
+            btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
+            btn.setAttribute('aria-selected', 'true');
+
+            certCards.forEach(card => {
+                const cat = card.getAttribute('data-cat');
+                const matches = filter === 'all' || cat === filter;
+
+                if (matches) {
+                    card.classList.remove('hidden');
+                    card.classList.add('in');
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(12px)';
+                    requestAnimationFrame(() => {
+                        card.style.transition = 'opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    });
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+})();
+
+/* ============ CERTIFICATE LIGHTBOX CONTROLLER ============ */
+(function () {
+    const lightbox = document.getElementById('certLightbox');
+    if (!lightbox) return;
+
+    const backdrop = document.getElementById('certLightboxBackdrop');
+    const closeBtn = document.getElementById('certLightboxCloseBtn');
+    const imgEl = document.getElementById('certLightboxImg');
+    const titleEl = document.getElementById('certLightboxTitle');
+    const issuerEl = document.getElementById('certLightboxIssuer');
+    const domainEl = document.getElementById('certLightboxDomain');
+    const downloadBtn = document.getElementById('certLightboxDownloadBtn');
+    const openTabBtn = document.getElementById('certLightboxOpenTabBtn');
+    const zoomBtn = document.getElementById('certLightboxZoomBtn');
+    const spinner = document.getElementById('certLightboxSpinner');
+
+    let lastActiveElement = null;
+    let isZoomed = false;
+
+    function setZoom(state) {
+        isZoomed = state;
+        if (!imgEl) return;
+        if (isZoomed) {
+            imgEl.classList.add('zoomed');
+            if (zoomBtn) {
+                zoomBtn.setAttribute('aria-pressed', 'true');
+                const label = zoomBtn.querySelector('span');
+                if (label) label.textContent = 'Zoom Out';
+            }
+        } else {
+            imgEl.classList.remove('zoomed');
+            if (zoomBtn) {
+                zoomBtn.setAttribute('aria-pressed', 'false');
+                const label = zoomBtn.querySelector('span');
+                if (label) label.textContent = 'Zoom';
+            }
+        }
+    }
+
+    function openLightbox(src, title, issuer, domain, downloadUrl, openTabUrl) {
+        lastActiveElement = document.activeElement;
+        setZoom(false);
+
+        if (spinner) spinner.style.display = 'block';
+        if (imgEl) {
+            imgEl.style.opacity = '0';
+            imgEl.src = src;
+            imgEl.alt = `${title} — ${issuer}`;
+            
+            imgEl.onload = function () {
+                if (spinner) spinner.style.display = 'none';
+                imgEl.style.opacity = '1';
+            };
+            imgEl.onerror = function () {
+                if (spinner) spinner.style.display = 'none';
+                imgEl.style.opacity = '1';
+            };
+        }
+
+        if (titleEl) titleEl.textContent = title || 'Certificate Preview';
+        if (issuerEl) issuerEl.textContent = issuer || '';
+        if (domainEl) domainEl.textContent = domain ? `// ${domain}` : '// CERTIFICATE PREVIEW';
+
+        const finalDownload = downloadUrl || src;
+        const finalOpenTab = openTabUrl || downloadUrl || src;
+
+        if (downloadBtn) {
+            downloadBtn.href = finalDownload;
+            const filename = finalDownload.split('/').pop().split('?')[0];
+            downloadBtn.download = decodeURIComponent(filename);
+            downloadBtn.setAttribute('aria-label', `Download ${title || 'Certificate'}`);
+        }
+
+        if (openTabBtn) {
+            openTabBtn.href = finalOpenTab;
+            openTabBtn.setAttribute('aria-label', `Open ${title || 'Certificate'} in new tab`);
+        }
+
+        lightbox.classList.add('active');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+
+        setTimeout(() => {
+            if (closeBtn) closeBtn.focus();
+        }, 50);
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        setZoom(false);
+
+        if (imgEl) {
+            imgEl.src = '';
+        }
+
+        if (lastActiveElement && typeof lastActiveElement.focus === 'function') {
+            lastActiveElement.focus();
+        }
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+    if (backdrop) backdrop.addEventListener('click', closeLightbox);
+
+    if (zoomBtn) {
+        zoomBtn.addEventListener('click', () => {
+            setZoom(!isZoomed);
+        });
+    }
+
+    if (imgEl) {
+        imgEl.addEventListener('click', () => {
+            setZoom(!isZoomed);
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') {
+            closeLightbox();
+        } else if (e.key === 'Tab') {
+            const focusables = lightbox.querySelectorAll('button, a[href]');
+            const first = focusables[0];
+            const last = focusables[focusables.length - 1];
+            if (e.shiftKey && document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+            }
+        }
+    });
+
+    const triggers = document.querySelectorAll('.cert-lightbox-trigger');
+    triggers.forEach(btn => {
+        const handleTrigger = (e) => {
+            e.preventDefault();
+            const src = btn.getAttribute('data-cert-src');
+            const title = btn.getAttribute('data-cert-title') || 'Certificate';
+            const issuer = btn.getAttribute('data-cert-issuer') || '';
+            const domain = btn.getAttribute('data-cert-domain') || '';
+            const download = btn.getAttribute('data-cert-download') || '';
+            const opentab = btn.getAttribute('data-cert-opentab') || download || src;
+            if (src) {
+                openLightbox(src, title, issuer, domain, download, opentab);
+            }
+        };
+
+        btn.addEventListener('click', handleTrigger);
+        btn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                handleTrigger(e);
+            }
+        });
+    });
+})();
+
